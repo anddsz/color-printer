@@ -1,9 +1,11 @@
 # Color printer
 A very simple (and scuffed) program that I wrote to facilitate my colorscheme tweaking process.
+Currently it can only deal with RGBA images, keep that in mind.
 
 # Dependencies
 
-- SDL_image - Used for image handling in general
+- SDL2: Definitions
+- SDL2_image: Image handling
 
 # Usage
 Run the program, passing the desired file as an argument and the desired color format. If no option is provided, HEX will be used.

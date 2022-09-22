@@ -81,7 +81,7 @@ void printColors(){
         case 'r':
             for(int i = 0; i < program.input->h * program.input->w; i++){
                 pixel = *((unsigned int *)program.input->pixels + i);
-                printf("(%i, %i, %i)\n", (unsigned char)(pixel >> 0), (unsigned char)(pixel >> 8), (unsigned char)(pixel >> 16));
+                printf("(%i, %i, %i)\n", (pixel >> 0) & 0xFF, (pixel >> 8) & 0xFF, (pixel >> 16) & 0xFF);
             }
             break;
         default:
